@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --body-text-font-family: "Helvetica", Helvetica;
+  --body-text-font-size: 24px;
+  --body-text-font-style: normal;
+  --body-text-font-weight: 400;
+  --body-text-letter-spacing: 0px;
+  --body-text-line-height: normal;
+  --button-text-2-font-family: "Helvetica", Helvetica;
+  --button-text-2-font-size: 20px;
+  --button-text-2-font-style: normal;
+  --button-text-2-font-weight: 700;
+  --button-text-2-letter-spacing: 0px;
+  --button-text-2-line-height: normal;
+  --CTA-button-text-font-family: "Helvetica", Helvetica;
+  --CTA-button-text-font-size: 20px;
+  --CTA-button-text-font-style: normal;
+  --CTA-button-text-font-weight: 400;
+  --CTA-button-text-letter-spacing: 0px;
+  --CTA-button-text-line-height: normal;
+  --glass-effect-1: 0.8317630290985107px 3.327052116394043px
+      10.397038459777832px 0.8317630290985107px rgba(0, 0, 0, 0.25);
+  --header-subtext-font-family: "Sukhumvit Set", Helvetica;
+  --header-subtext-font-size: 22px;
+  --header-subtext-font-style: normal;
+  --header-subtext-font-weight: 500;
+  --header-subtext-letter-spacing: 2.2px;
+  --header-subtext-line-height: normal;
+  --heading-1-font-family: "Helvetica", Helvetica;
+  --heading-1-font-size: 40px;
+  --heading-1-font-style: normal;
+  --heading-1-font-weight: 700;
+  --heading-1-letter-spacing: 2.8px;
+  --heading-1-line-height: 107.38937854766846%;
+  --heading-2-font-family: "Helvetica", Helvetica;
+  --heading-2-font-size: 35px;
+  --heading-2-font-style: normal;
+  --heading-2-font-weight: 700;
+  --heading-2-letter-spacing: 0.7px;
+  --heading-2-line-height: normal;
+  --shadow: 0px 4px 9.899999618530273px 1px rgba(0, 0, 0, 0.25);
+  --title-font-family: "Helvetica", Helvetica;
+  --title-font-size: 50px;
+  --title-font-style: normal;
+  --title-font-weight: 700;
+  --title-letter-spacing: 3.5px;
+  --title-line-height: 107.38937854766846%;
+}
+
+.Title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  height: auto;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.Title .text-wrapper {
+  color: #090909;
+  font-family: var(--title-font-family);
+  font-style: var(--title-font-style);
+  font-weight: var(--title-font-weight);
+  letter-spacing: var(--title-letter-spacing);
+  line-height: var(--title-line-height);
+  margin-top: -1.22px;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(1.75rem, 6vw, 3.125rem); /* responsive between 28px and 50px */
+}
+
+.Title .div {
+  -webkit-text-stroke: 0.45px #ffffff;
+  color: #8c0000;
+  font-family: var(--header-subtext-font-family);
+  font-style: var(--header-subtext-font-style);
+  font-weight: var(--header-subtext-font-weight);
+  letter-spacing: var(--header-subtext-letter-spacing);
+  line-height: var(--header-subtext-line-height);
+  text-align: center;
+  width: 100%;
+  font-size: clamp(1rem, 4.5vw, 1.375rem); /* responsive between 16px and 22px */
+}
