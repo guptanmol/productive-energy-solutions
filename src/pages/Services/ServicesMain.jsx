@@ -121,7 +121,7 @@ const ServicesMain = () => {
 
       {/* SECTION 2: Images */}
       <section className="space-y-10 text-center pt-20">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-6xl">
           {[
             {
               src: Saw_dust,
@@ -141,7 +141,7 @@ const ServicesMain = () => {
           ].map((img, index) => (
             <div key={index} className="group flex flex-col items-center transition-transform duration-300">
               {/* Image container */}
-              <div className="relative overflow-hidden rounded-xl transition-transform duration-300 w-full group-hover:-translate-y-2">
+              <div className="relative overflow-hidden rounded-xl transition-transform duration-300 max-w-5xl group-hover:-translate-y-2">
                 {/* Image */}
                 <img
                   src={img.src}

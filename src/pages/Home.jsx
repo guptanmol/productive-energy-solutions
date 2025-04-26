@@ -46,7 +46,7 @@ const testimonials = [
       handle: "West VP of Sales | Fans and Turbine Products | Process Barron",
       avatar: Bill
     },
-    text: "Your image evoked many happy memories! What a memorable time and fun learning experience it was not only for the fan trainers in-training but also for the candidates, South African industry and UNIDO. It changed forever the way we viewed, measured and optimised fan systems. We remain eternally grateful to you and Bill Cory for debunking the scientific approach and methodology in unlocking significant energy savings by improving fan system performance. Thank you, from a huge FAN!",
+    text: "I really enjoyed teaching the DOE and UNIDO courses with you. You explain psychrometrics better than anyone else! Students truly understand fans and fan systems when you are done with them. Your online tutorials are great for businesses that can’t afford to send their engineers to a seminar. Highly recommended.",
     href: "https://www.linkedin.com/in/ronald-wroblewski-4a1123161/details/recommendations/?detailScreenTabIndex=0"
   },
   {
@@ -123,59 +123,59 @@ const Home = () => {
       <div className="flex flex-col items-center justify-center pt-20 px-4 bg-white space-y-[180px]">
         {/* Section 1 */}
         <section className="flex flex-col items-center w-full space-y-[30px]">
-  <div className="Title text-center space-y-[14px] max-w-5xl">
-    <p className="text-wrapper">Optimizing Energy Efficiency, Enhancing Performance</p>
-    <p className="div">
-      Unbiased training and consulting to improve mechanical energy systems, reduce waste, and maximize productivity and efficiency.
-    </p>
-  </div>
+          <div className="Title text-center space-y-[14px] max-w-5xl">
+            <p className="text-wrapper">Optimizing Energy Efficiency, Enhancing Performance</p>
+            <p className="div">
+              Unbiased training and consulting to improve mechanical energy systems, reduce waste, and maximize productivity and efficiency.
+            </p>
+          </div>
 
-  {/* Desktop Image + CTA */}
-  <div className="relative max-w-5xl w-full hidden md:block">
-    <img
-      src={heroImage}
-      alt="Energy systems in action"
-      className="w-full"
-    />
-    <div
-      className="absolute bottom-4 right-20 group cursor-pointer"
-      onClick={() => setShowHomeContactPopup(true)}
-    >
-      <div className="relative w-[206px] h-[66px]">
-        <div className="absolute inset-0 bg-white/40 backdrop-blur-md rounded-[23px] transition-colors duration-300 group-hover:bg-[#930000]" />
-        <div className="absolute w-[57px] h-[53px] top-[6px] right-[8px] bg-[#930000] rounded-[22px] flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </div>
-        <div className="absolute top-[21px] left-[29px] text-white font-helvetica text-[20px]">Reach Out</div>
-      </div>
-    </div>
-  </div>
+          {/* Desktop Image + CTA */}
+          <div className="relative max-w-4xl w-full hidden md:block">
+            <img
+              src={heroImage}
+              alt="Energy systems in action"
+              className="w-full"
+            />
+            <div
+              className="absolute bottom-4 right-20 group cursor-pointer"
+              onClick={() => setShowHomeContactPopup(true)}
+            >
+              <div className="relative w-[206px] h-[66px]">
+                <div className="absolute inset-0 bg-white/40 backdrop-blur-md rounded-[23px] transition-colors duration-300 group-hover:bg-[#930000]" />
+                <div className="absolute w-[57px] h-[53px] top-[6px] right-[8px] bg-[#930000] rounded-[22px] flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <div className="absolute top-[21px] left-[29px] text-white font-helvetica text-[20px]">Reach Out</div>
+              </div>
+            </div>
+          </div>
 
-  {/* Mobile Image + Centered CTA */}
-  <div className="md:hidden w-full max-w-5xl space-y-4 flex flex-col items-center">
-    <img
-      src={MHero}
-      alt="Energy systems mobile"
-      className="w-full"
-    />
-    <div
-      className="relative bottom-1  group cursor-pointer"
-      onClick={() => setShowHomeContactPopup(true)}
-    >
-      <div className="relative w-[206px] h-[66px]">
-        <div className="absolute inset-0 bg-gray-300 shadow-xl backdrop-blur-md rounded-[23px] transition-colors duration-300 group-hover:bg-[#930000]" />
-        <div className="absolute w-[57px] h-[53px] top-[6px] right-[8px] bg-[#930000] rounded-[22px] flex items-center justify-center">
-          <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </div>
-        <div className="absolute top-[21px] left-[29px] text-red-900 font-helvetica text-[20px]">Reach Out</div>
-      </div>
-    </div>
-  </div>
-</section>
+          {/* Mobile Image + Centered CTA */}
+          <div className="md:hidden w-full max-w-5xl space-y-4 flex flex-col items-center">
+            <img
+              src={MHero}
+              alt="Energy systems mobile"
+              className="w-full"
+            />
+            <div
+              className="relative bottom-1  group cursor-pointer"
+              onClick={() => setShowHomeContactPopup(true)}
+            >
+              <div className="relative w-[206px] h-[66px]">
+                <div className="absolute inset-0 bg-gray-300 shadow-xl backdrop-blur-md rounded-[23px] transition-colors duration-300 group-hover:bg-[#930000]" />
+                <div className="absolute w-[57px] h-[53px] top-[6px] right-[8px] bg-[#930000] rounded-[22px] flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </div>
+                <div className="absolute top-[21px] left-[29px] text-red-900 font-helvetica text-[20px]">Reach Out</div>
+              </div>
+            </div>
+          </div>
+        </section>
 
 
       {/* Section 2 */}

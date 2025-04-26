@@ -23,13 +23,13 @@ const OnlineTrainingPage = () => {
       <section className="pt-8">
         <ServiceNavTabs />
       </section>
-    <div className="space-y-40">
+    <div className="space-y-24">
       {/* Hero Section */}
       <section className="space-y-10 text-center">
         <h1 className="text-3xl sm:text-4xl font-bold text-[#8C0000] tracking-wide">
           Online Training
         </h1>
-        <p className="text-lg sm:text-xl max-w-5xl mx-auto tracking-wide">
+        <p className="text-lg sm:text-lg max-w-5xl mx-auto tracking-wide">
           Our Fan Engineering Foundations courses, offered in partnership with AMCA International, provide a flexible online learning experience through live webcasts and self-paced modules.
         </p>
         <div className="relative flex justify-center">

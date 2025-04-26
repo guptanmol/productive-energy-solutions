@@ -8,7 +8,7 @@ const PastWork = ({
   ]
 }) => {
   return (
-    <section className="py-32">
+    <section className="py-12">
       <div className="container flex flex-col items-center gap-16">
 
         <div

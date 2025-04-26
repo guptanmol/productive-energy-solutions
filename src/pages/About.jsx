@@ -12,7 +12,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const AboutContactPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center pt-20 px-4 bg-white space-y-[120px]">
+    <div className="flex flex-col items-center justify-center pt-20 px-4 bg-white space-y-12">
 
       {/* About Us Section */}
       <section className="flex flex-col items-center w-full space-y-[30px] max-w-5xl text-center">

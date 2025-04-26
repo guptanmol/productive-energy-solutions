@@ -5,8 +5,6 @@ import Image2 from "../../images/Onsite/2.png";
 import Image3 from "../../images/Onsite/3.png";
 import ServiceNavTabs from "@/components/blocks/ServiceTabs";
 import info from "../../images/Icons/info.svg";
-
-// Material UI Icons
 import SchoolIcon from '@mui/icons-material/School';
 import HomeRepairServiceIcon from '@mui/icons-material/HomeRepairService';
 import EngineeringIcon from '@mui/icons-material/Engineering';
@@ -23,7 +21,7 @@ const OnsiteTrainingPage = () => {
         <ServiceNavTabs />
       </section>
 
-      <div className="space-y-40">
+      <div className="space-y-24">
         {/* Hero Section */}
         <section className="space-y-10 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-[#8C0000] tracking-wide">
@@ -40,10 +38,11 @@ const OnsiteTrainingPage = () => {
             className="w-full h-auto object-cover"
           />
 
-          {/* Caption overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-white/70 text-gray-800 text-md px-4 py-2 font-medium text-center">
+         {/* Desktop caption overlay */}
+         <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-white/70 text-gray-800 text-md px-4 py-2 font-medium text-center">
           Deerfield woods training center, Burns Harbor, Indiana.  Class photo for Intro to fan and pump system optimization training.
           </div>
+          <p className="block sm:hidden text-sm text-center text-gray-700 mt-2">Deerfield woods training center, Burns Harbor, Indiana.  Class photo for Intro to fan and pump system optimization training.</p>
         </div>
 
         </section>
@@ -60,7 +59,7 @@ const OnsiteTrainingPage = () => {
             {
               src: Image2,
               alt: "Field 1",
-              caption: "Ukraine class photo: Fans systems optimization expert level candidates"
+              caption: "Mombassa Kenya, class photo: Introduction to fan, pump and compressor systems training"
             },
             {
               src: Image1,
@@ -70,7 +69,7 @@ const OnsiteTrainingPage = () => {
             {
               src: Image3,
               alt: "Field 3",
-              caption: "Mombassa Kenya, class photo: Introduction to fan, pump and compressor systems training"
+              caption: "Ukraine class photo: Fans systems optimization expert level candidates"
             },
           ].map((img, index) => (
             <div key={index} className="group flex flex-col items-center transition-transform duration-300">

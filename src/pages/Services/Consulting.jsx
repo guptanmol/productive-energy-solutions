@@ -58,7 +58,7 @@ const ConsultingPage = () => {
         <ServiceNavTabs />
       </section>
 
-      <div className="space-y-40">
+      <div className="space-y-24">
         {/* Hero Section */}
         <section className="space-y-10 text-center">
           <h1 className="text-3xl sm:text-4xl font-bold text-[#8C0000] tracking-wide">Consulting</h1>
@@ -74,11 +74,18 @@ const ConsultingPage = () => {
             className="w-full h-auto object-cover"
           />
 
-          {/* Caption overlay */}
-          <div className="absolute bottom-0 left-0 right-0 bg-white/70 text-gray-800 text-md px-4 py-2 font-medium text-center">
-          Using the strobe tachometer to measure the fan speed at a cement plant
+          {/* Desktop caption overlay */}
+          <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-white/70 text-gray-800 text-md px-4 py-2 font-medium text-center">
+            Using the strobe tachometer to measure the fan speed at a cement plant
           </div>
+        
+
+        {/* Mobile caption below image */}
+        <p className="block sm:hidden text-sm text-center text-gray-700 mt-2">
+          Using the strobe tachometer to measure the fan speed at a cement plant
+        </p>
         </div>
+
         </section>
 
         {/* Our Work in the Field */}
@@ -94,7 +101,7 @@ const ConsultingPage = () => {
             {
               src: Image2,
               alt: "Field 1",
-              caption: "Exhaust fans atop the homogenized materials silo at a cement plant"
+              caption: "Cement raw mill inlet ductwork"
             },
             {
               src: Image3,
@@ -104,7 +111,7 @@ const ConsultingPage = () => {
             {
               src: Image1,
               alt: "Field 3",
-              caption: "Cement raw mill inlet ductwork"
+              caption: "Exhaust fans atop the homogenized materials silo at a cement plant"
             },
           ].map((img, index) => (
             <div key={index} className="group flex flex-col items-center transition-transform duration-300">
@@ -168,19 +175,17 @@ const ConsultingPage = () => {
         </section>
 
         {/* Our Previous Work */}
-        <div className="flex flex-col items-center w-full mt-40">
-          <div className="Title text-center max-w-5xl space-y-2 mb-6">
-            <p className="text-wrapper mb-1">Our Previous Work</p>
-            <p className="div mb-0">
-              We provide expert training and consulting to optimize fan, pump, and motor systems.
-              With flexible online courses, hands-on onsite training, and tailored consulting,
-              we help businesses improve efficiency, performance, and energy savings.
-            </p>
-          </div>
-          <div className="grid gap-y-20 w-full max-w-7xl mx-auto">
+        <section className="space-y-6 text-center">
+        <h2 className="text-2xl sm:text-3xl font-bold text-[#14274A]">Our Previous Work</h2>
+          <p className="text-lg max-w-3xl mx-auto">
+            We provide expert training and consulting to optimize fan, pump, and motor systems.
+            With flexible online courses, hands-on onsite training, and tailored consulting,
+            we help businesses improve efficiency, performance, and energy savings.
+          </p>
+          <div className="grid gap-y-10 w-full max-w-7xl mx-auto">
             <PastWork {...PastWorkData} />
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );
