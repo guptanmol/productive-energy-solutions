@@ -39,10 +39,10 @@ const OnsiteTrainingPage = () => {
           />
 
          {/* Desktop caption overlay */}
-         <div className="hidden sm:block absolute bottom-0 left-0 right-0 bg-white/70 text-gray-800 text-md px-4 py-2 font-medium text-center">
-          Deerfield woods training center, Burns Harbor, Indiana.  Class photo for Intro to fan and pump system optimization training.
-          </div>
-          <p className="block sm:hidden text-sm text-center text-gray-700 mt-2">Deerfield woods training center, Burns Harbor, Indiana.  Class photo for Intro to fan and pump system optimization training.</p>
+         <p className="text-md text-gray-700 mt-4 max-w-6xl text-center pb-4">
+          Deerfield woods training center, Burns Harbor, Indiana. Class photo for Intro to fan and pump system optimization training.
+          </p>
+          <p className="block sm:hidden text-sm text-center text-gray-700 mt-2 pb-4">Deerfield woods training center, Burns Harbor, Indiana.  Class photo for Intro to fan and pump system optimization training.</p>
         </div>
 
         </section>

@@ -184,7 +184,14 @@ const Home = () => {
           <p className="text-wrapper">Why Choose Us?</p>
           <p className="div">We provide training and consulting for fan, pump, and motor systems.</p>
         </div>
-        <img src={LookingUp} alt="Why choose us" className="w-full object-cover" />
+        <div className="max-w-6xl">
+          <img
+            src={LookingUp}
+          />
+          <p className="text-md text-gray-700 mt-4 max-w-6xl text-center">
+          Engineers examining the inlet dampers on a large fan at a fertilizer factory in Pocatello, Idaho
+          </p>
+        </div>
       </section>
 
       {/* Section 3 */}
